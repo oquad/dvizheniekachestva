@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+a#navLinks{
+    transform: skew(35deg);
+}
+
+img#workStagesCardImage{
+  max-width: 50%;
+  max-height: 50%;
+}
+
+div#workStagesContent{
+  transform: skew(-35deg);
+}
+
+.navBarLinks{
+  position: relative;
+
+  border-right: 4px solid red;
+  background-color: aqua;
+  height: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 95%;
+  box-shadow: black;
+
+  position: absolute;
+  left: -30px;
+
+  transform: skew(-35deg);
+  background-color: rgb(238, 238, 238);
+}

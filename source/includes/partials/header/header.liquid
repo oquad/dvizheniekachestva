@@ -1,0 +1,21 @@
+<header class="bg-white h-36 w-full">
+    <div class="h-2/3 flex justify-evenly items-center">
+        <img src="{{ headerImageUrl }}"/>
+        <div>
+            <p class="font-semibold">{{ headerWorkingTime }}</p>
+            <p class="font-semibold">{{ headerEmail }}</p>
+        </div>
+        <h4 class="font-semibold text-xl">{{ headerPhoneNumber }}</h4>
+        <button class="bg-red-600 w-64 h-1/2 text-white font-bold hover:bg-red-800">{{ headerOrderCallButtonText }}</button>
+    </div>
+    <div class="navBarLinks drop-shadow-lg font-semibold text-black">
+        
+        {% assign linksTitlesArr = headerLinksTitles | split: '( ^v^), '%}
+        {% assign linksUrlsArr = headerLinksUrls | split: '( ^v^), '%}
+        {% for linkTitle in linksTitlesArr %}
+                {% assign position = forloop.index0 %}
+                <a id="navLinks" href="{{ linksUrlsArr[position] }}">{{ linkTitle }}</a>
+        {% endfor %}
+
+    </div>
+</header>
