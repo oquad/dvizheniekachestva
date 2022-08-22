@@ -2,8 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-a#navLinks{
-    transform: skew(35deg);
+.stageNumberBorder{
+  border: 4px solid skyblue;
+  border-image: linear-gradient(to right top, white, red);
+  border-image-slice: 1;
+}
+
+h1#workStagesContentStageName, a#navLinks, h4#workStagesCardContentStageDesc{
+  transform: skew(35deg);
 }
 
 img#workStagesCardImage{
