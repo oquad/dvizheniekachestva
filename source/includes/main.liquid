@@ -7,18 +7,18 @@ text:
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width:device-width, initial-scale=1.0" />
-        <title>Oquad first site</title>
+        <title>{{ title }}</title>
         <link rel="stylesheet" href="/css/styles.css" />
     </head>
-<body class="min-h-screen flex flex-col">
+    <body class="min-h-screen flex flex-col">
 
-{% include './partials/header/header' %}
+        {% include './partials/header/header' %}
 
+        {% include './partials/signs/sectionSign' %}
 
-{% include './partials/cards/workStagesCard' %}
+        {% include './content/content' %}
 
-{% include './partials/footer/footer' %}
+        {% include './partials/footer/footer' %}
 
-
-</body>
+    </body>
 </html>

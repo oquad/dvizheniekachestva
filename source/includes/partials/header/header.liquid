@@ -1,13 +1,26 @@
 <header class="bg-white h-36 w-full">
+
+<!-- ======================================== Header Main Info ======================================== -->
+<!-- ======================================== vvvvvvvvvvvvvvvv ======================================== -->
+
     <div class="h-2/3 flex justify-evenly items-center">
-        <img src="{{ headerImageUrl }}"/>
+        <img src="{{ headerImageUrl }}" width="200" height="100"/>
         <div>
             <p class="font-semibold">{{ headerWorkingTime }}</p>
-            <p class="font-semibold">{{ headerEmail }}</p>
+            <p class="font-semibold">{{ headerAddress }}</p>
         </div>
-        <h4 class="font-semibold text-xl">{{ headerPhoneNumber }}</h4>
+        <div class="flex-col">
+            <h4 class="font-semibold text-xl">{{ headerFirstPhoneNumber }}</h4>
+            <h4 class="font-semibold text-xl">{{ headerSecondPhoneNumber }}</h4>
+        </div>
         <button class="bg-red-600 w-64 h-1/2 text-white font-bold hover:bg-red-800">{{ headerOrderCallButtonText }}</button>
     </div>
+
+<!-- ======================================== ^^^^^^^^^^^^^^^^ ======================================== -->
+
+<!-- ======================================== Header Navbar ======================================== -->
+<!-- ======================================== vvvvvvvvvvvvv ======================================== -->
+
     <div class="navBarLinks drop-shadow-lg font-semibold text-black">
         
         {% assign linksTitlesArr = headerLinksTitles | split: '( ^v^), '%}
@@ -18,4 +31,6 @@
         {% endfor %}
 
     </div>
+
+<!-- ======================================== ^^^^^^^^^^^^^ ======================================== -->    
 </header>
